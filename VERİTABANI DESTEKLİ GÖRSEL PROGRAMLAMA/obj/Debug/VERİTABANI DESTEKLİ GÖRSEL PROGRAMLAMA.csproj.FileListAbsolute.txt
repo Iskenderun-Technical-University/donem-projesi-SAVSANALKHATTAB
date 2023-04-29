@@ -17,3 +17,4 @@ C:\Users\pc\Desktop\2. dönem projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI 
 C:\Users\pc\Desktop\2. dönem projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.csproj.CoreCompileInputs.cache
 C:\Users\pc\Desktop\2. dönem projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.exe
 C:\Users\pc\Desktop\2. dönem projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.pdb
+C:\Users\pc\Desktop\2. dönem projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA.Sipariş.resources
