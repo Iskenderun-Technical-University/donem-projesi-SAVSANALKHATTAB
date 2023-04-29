@@ -31,5 +31,17 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void label7_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
