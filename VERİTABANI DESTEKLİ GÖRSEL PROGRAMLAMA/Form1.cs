@@ -43,5 +43,27 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            Sipariş uorder = new Sipariş();
+            uorder.Show();
+            this.Hide(); 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            
+           
+           
+            
+            
+        }
     }
 }

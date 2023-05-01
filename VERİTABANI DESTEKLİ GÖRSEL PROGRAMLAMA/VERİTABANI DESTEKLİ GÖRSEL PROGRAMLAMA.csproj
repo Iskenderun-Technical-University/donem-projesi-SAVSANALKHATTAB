@@ -71,12 +71,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KullanıcılarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcılarForm.Designer.cs">
+      <DependentUpon>KullanıcılarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sepetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sepetim.Designer.cs">
+      <DependentUpon>Sepetim.cs</DependentUpon>
     </Compile>
     <Compile Include="Sipariş.cs">
       <SubType>Form</SubType>
@@ -92,9 +104,15 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcılarForm.resx">
+      <DependentUpon>KullanıcılarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sepetim.resx">
+      <DependentUpon>Sepetim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sipariş.resx">
       <DependentUpon>Sipariş.cs</DependentUpon>
