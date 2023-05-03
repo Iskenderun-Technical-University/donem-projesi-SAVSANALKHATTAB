@@ -35,10 +35,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.kullanıcışifTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.button1 = new System.Windows.Forms.Button();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.kullanıcıadTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.kullanıcıtelTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.SiparişGV = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -57,10 +57,10 @@
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox3);
+            this.panel1.Controls.Add(this.kullanıcışifTb);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox2);
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox1);
+            this.panel1.Controls.Add(this.kullanıcıadTb);
+            this.panel1.Controls.Add(this.kullanıcıtelTb);
             this.panel1.Controls.Add(this.SiparişGV);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(153, 40);
@@ -153,25 +153,25 @@
             this.button5.Text = "Şifre";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // bunifuMaterialTextbox3
+            // kullanıcışifTb
             // 
-            this.bunifuMaterialTextbox3.BackColor = System.Drawing.Color.PapayaWhip;
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Orange;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Brown;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Orange;
-            this.bunifuMaterialTextbox3.LineThickness = 4;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(152, 345);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(135, 25);
-            this.bunifuMaterialTextbox3.TabIndex = 17;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.kullanıcışifTb.BackColor = System.Drawing.Color.PapayaWhip;
+            this.kullanıcışifTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.kullanıcışifTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullanıcışifTb.ForeColor = System.Drawing.Color.Black;
+            this.kullanıcışifTb.HintForeColor = System.Drawing.Color.Empty;
+            this.kullanıcışifTb.HintText = "";
+            this.kullanıcışifTb.isPassword = false;
+            this.kullanıcışifTb.LineFocusedColor = System.Drawing.Color.Orange;
+            this.kullanıcışifTb.LineIdleColor = System.Drawing.Color.Brown;
+            this.kullanıcışifTb.LineMouseHoverColor = System.Drawing.Color.Orange;
+            this.kullanıcışifTb.LineThickness = 4;
+            this.kullanıcışifTb.Location = new System.Drawing.Point(152, 345);
+            this.kullanıcışifTb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.kullanıcışifTb.Name = "kullanıcışifTb";
+            this.kullanıcışifTb.Size = new System.Drawing.Size(135, 25);
+            this.kullanıcışifTb.TabIndex = 17;
+            this.kullanıcışifTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // button1
             // 
@@ -186,46 +186,47 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Sepete Ekle";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // bunifuMaterialTextbox2
+            // kullanıcıadTb
             // 
-            this.bunifuMaterialTextbox2.BackColor = System.Drawing.Color.PapayaWhip;
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.Orange;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Brown;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.Orange;
-            this.bunifuMaterialTextbox2.LineThickness = 4;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(150, 245);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(135, 31);
-            this.bunifuMaterialTextbox2.TabIndex = 11;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.kullanıcıadTb.BackColor = System.Drawing.Color.PapayaWhip;
+            this.kullanıcıadTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.kullanıcıadTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullanıcıadTb.ForeColor = System.Drawing.Color.Black;
+            this.kullanıcıadTb.HintForeColor = System.Drawing.Color.Empty;
+            this.kullanıcıadTb.HintText = "";
+            this.kullanıcıadTb.isPassword = false;
+            this.kullanıcıadTb.LineFocusedColor = System.Drawing.Color.Orange;
+            this.kullanıcıadTb.LineIdleColor = System.Drawing.Color.Brown;
+            this.kullanıcıadTb.LineMouseHoverColor = System.Drawing.Color.Orange;
+            this.kullanıcıadTb.LineThickness = 4;
+            this.kullanıcıadTb.Location = new System.Drawing.Point(150, 245);
+            this.kullanıcıadTb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.kullanıcıadTb.Name = "kullanıcıadTb";
+            this.kullanıcıadTb.Size = new System.Drawing.Size(135, 31);
+            this.kullanıcıadTb.TabIndex = 11;
+            this.kullanıcıadTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox1
+            // kullanıcıtelTb
             // 
-            this.bunifuMaterialTextbox1.BackColor = System.Drawing.Color.PapayaWhip;
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Orange;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Brown;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Orange;
-            this.bunifuMaterialTextbox1.LineThickness = 4;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(150, 296);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(135, 31);
-            this.bunifuMaterialTextbox1.TabIndex = 10;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.kullanıcıtelTb.BackColor = System.Drawing.Color.PapayaWhip;
+            this.kullanıcıtelTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.kullanıcıtelTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullanıcıtelTb.ForeColor = System.Drawing.Color.Black;
+            this.kullanıcıtelTb.HintForeColor = System.Drawing.Color.Empty;
+            this.kullanıcıtelTb.HintText = "";
+            this.kullanıcıtelTb.isPassword = false;
+            this.kullanıcıtelTb.LineFocusedColor = System.Drawing.Color.Orange;
+            this.kullanıcıtelTb.LineIdleColor = System.Drawing.Color.Brown;
+            this.kullanıcıtelTb.LineMouseHoverColor = System.Drawing.Color.Orange;
+            this.kullanıcıtelTb.LineThickness = 4;
+            this.kullanıcıtelTb.Location = new System.Drawing.Point(150, 296);
+            this.kullanıcıtelTb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.kullanıcıtelTb.Name = "kullanıcıtelTb";
+            this.kullanıcıtelTb.Size = new System.Drawing.Size(135, 31);
+            this.kullanıcıtelTb.TabIndex = 10;
+            this.kullanıcıtelTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // SiparişGV
             // 
@@ -255,7 +256,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.button3.Location = new System.Drawing.Point(12, 102);
+            this.button3.Location = new System.Drawing.Point(12, 123);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 32);
             this.button3.TabIndex = 19;
@@ -320,10 +321,10 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox kullanıcışifTb;
         private System.Windows.Forms.Button button1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox kullanıcıadTb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox kullanıcıtelTb;
         private System.Windows.Forms.DataGridView SiparişGV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;

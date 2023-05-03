@@ -13,7 +13,7 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Sipariş());
+            Application.Run(new Form1());
 
 
         }

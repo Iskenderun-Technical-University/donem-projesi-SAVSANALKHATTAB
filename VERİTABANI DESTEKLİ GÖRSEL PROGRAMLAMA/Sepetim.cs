@@ -38,12 +38,15 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         private void button4_Click(object sender, EventArgs e)
         {
 
+            this.Hide();
+            KullanıcılarForm kullanıcı = new KullanıcılarForm();
+            kullanıcı.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Sipariş sipariş = new Sipariş();
+            SiparişForm sipariş = new SiparişForm();
             sipariş.Show();
 
 
