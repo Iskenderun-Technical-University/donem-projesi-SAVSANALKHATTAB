@@ -18,6 +18,17 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\pc\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\Database.mdf"";Integrated Security=True");
+        void populate()
+        {
+            con.Open();
+            String query = " select * from KullanıcılarTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            KullanıcıGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -58,7 +69,45 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             cmd.ExecuteNonQuery();
             MessageBox.Show("Kullanıcı başarılı bir şekilde eklendi");
             con.Close();
+            populate();
 
+        }
+
+        private void KullanıcılarForm_Load(object sender, EventArgs e)
+        {
+            populate();
+        }
+
+        private void KullanıcıGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            kullanıcıadTb.Text = KullanıcıGV.SelectedRows[0].Cells[0].Value.ToString();
+            kullanıcıtelTb.Text = KullanıcıGV.SelectedRows[0].Cells[1].Value.ToString();
+            kullanıcışifTb.Text = KullanıcıGV.SelectedRows[0].Cells[2].Value.ToString();
+
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if(kullanıcıtelTb.Text == "")
+            {
+                MessageBox.Show("Silinecek kullanıcıyı seçiniz");
+            }
+            else
+            {
+                con.Open();
+                string query = "delet from KullanıcılarTbl where KullanıcıTel = '" + kullanıcıtelTb.Text + "'";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("kullanıcı başarılı bir şekilde silindi!!!!");
+                con.Close();
+                populate();
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
 
         }
     }

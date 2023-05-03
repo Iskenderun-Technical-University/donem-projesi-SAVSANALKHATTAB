@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -39,13 +42,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.kullanıcıadTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.kullanıcıtelTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.SiparişGV = new System.Windows.Forms.DataGridView();
+            this.KullanıcıGV = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SiparişGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KullanıcıGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,7 +64,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.kullanıcıadTb);
             this.panel1.Controls.Add(this.kullanıcıtelTb);
-            this.panel1.Controls.Add(this.SiparişGV);
+            this.panel1.Controls.Add(this.KullanıcıGV);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(153, 40);
             this.panel1.Name = "panel1";
@@ -81,6 +84,7 @@
             this.button10.TabIndex = 23;
             this.button10.Text = "Sil";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -124,6 +128,7 @@
             this.button7.TabIndex = 20;
             this.button7.Text = "Kullanıcı adı";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -184,7 +189,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 27);
             this.button1.TabIndex = 13;
-            this.button1.Text = "Sepete Ekle";
+            this.button1.Text = " Ekle";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -228,14 +233,48 @@
             this.kullanıcıtelTb.TabIndex = 10;
             this.kullanıcıtelTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // SiparişGV
+            // KullanıcıGV
             // 
-            this.SiparişGV.BackgroundColor = System.Drawing.Color.PapayaWhip;
-            this.SiparişGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.SiparişGV.Location = new System.Drawing.Point(469, 141);
-            this.SiparişGV.Name = "SiparişGV";
-            this.SiparişGV.Size = new System.Drawing.Size(450, 441);
-            this.SiparişGV.TabIndex = 4;
+            this.KullanıcıGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.KullanıcıGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.KullanıcıGV.BackgroundColor = System.Drawing.Color.PapayaWhip;
+            this.KullanıcıGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.KullanıcıGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.KullanıcıGV.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.KullanıcıGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.KullanıcıGV.DefaultCellStyle = dataGridViewCellStyle1;
+            this.KullanıcıGV.GridColor = System.Drawing.Color.Brown;
+            this.KullanıcıGV.Location = new System.Drawing.Point(469, 141);
+            this.KullanıcıGV.Name = "KullanıcıGV";
+            this.KullanıcıGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Sienna;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.KullanıcıGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.KullanıcıGV.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Farsi Simple Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Sienna;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Linen;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.DarkRed;
+            this.KullanıcıGV.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.KullanıcıGV.RowTemplate.Height = 30;
+            this.KullanıcıGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.KullanıcıGV.Size = new System.Drawing.Size(450, 441);
+            this.KullanıcıGV.TabIndex = 4;
+            this.KullanıcıGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.KullanıcıGV_CellContentClick);
             // 
             // label1
             // 
@@ -303,10 +342,12 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "KullanıcılarForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KullanıcılarForm";
+            this.Load += new System.EventHandler(this.KullanıcılarForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SiparişGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KullanıcıGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,7 +366,7 @@
         private System.Windows.Forms.Button button1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox kullanıcıadTb;
         private Bunifu.Framework.UI.BunifuMaterialTextbox kullanıcıtelTb;
-        private System.Windows.Forms.DataGridView SiparişGV;
+        private System.Windows.Forms.DataGridView KullanıcıGV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
