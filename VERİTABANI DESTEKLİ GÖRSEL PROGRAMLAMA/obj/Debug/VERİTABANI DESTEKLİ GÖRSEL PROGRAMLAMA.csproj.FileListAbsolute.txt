@@ -52,3 +52,19 @@ C:\Users\pc\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABAN
 C:\Users\pc\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.pdb
 C:\Users\pc\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\bin\Debug\Database.mdf
 C:\Users\pc\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\bin\Debug\Database_log.ldf
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\bin\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.exe.config
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\bin\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.exe
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\bin\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.pdb
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.csproj.AssemblyReference.cache
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA.Form1.resources
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA.KullanıcılarForm.resources
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA.Properties.Resources.resources
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA.SiparişForm.resources
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.csproj.GenerateResource.cache
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.csproj.CoreCompileInputs.cache
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.csproj.CopyComplete
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.exe
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.pdb
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA.Öğeler.resources

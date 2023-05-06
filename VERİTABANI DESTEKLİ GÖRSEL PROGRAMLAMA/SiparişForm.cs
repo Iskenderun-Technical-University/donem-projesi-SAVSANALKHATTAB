@@ -48,7 +48,7 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         {
 
             this.Hide();
-           Sepetim öğeler  = new Sepetim();
+           Öğeler öğeler  = new Öğeler();
             öğeler.Show();
         }
 

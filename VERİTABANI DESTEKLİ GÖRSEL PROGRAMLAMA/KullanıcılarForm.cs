@@ -17,7 +17,8 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\pc\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\Database.mdf"";Integrated Security=True");
+
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\pc\OneDrive\المستندات\KafeShopdb.mdf;Integrated Security=True;Connect Timeout=30");
         void populate()
         {
             con.Open();
@@ -49,7 +50,7 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         private void button4_Click(object sender, EventArgs e)
         {
             SiparişForm öğeler = new SiparişForm();
-            öğeler.Show();
+            öğeler.Show();   
             this.Hide();
         }
 
@@ -97,10 +98,10 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             else
             {
                 con.Open();
-                string query = "delet from KullanıcılarTbl where KullanıcıTel = '" + kullanıcıtelTb.Text + "'";
+                string query = "Delete from KullanıcılarTbl where KullanıcıTel = '" + kullanıcıtelTb.Text + "'";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("kullanıcı başarılı bir şekilde silindi!!!!");
+                MessageBox.Show("Kullanıcı başarılı bir şekilde silindi");
                 con.Close();
                 populate();
             }
@@ -109,6 +110,24 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         private void button7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if(kullanıcıtelTb.Text == "" || kullanıcışifTb.Text == "" || kullanıcıadTb.Text == "")
+            {
+                MessageBox.Show("Tüm boşlukları doldurunuz");
+            }
+            else
+            {
+                con.Open();
+                string query = "update KullanıcılarTbl set KullanıcıAd = '" + kullanıcıadTb.Text + "' , KullanıcıŞif = '" + kullanıcışifTb.Text + "' where KullanıcıTel ='"+kullanıcıtelTb.Text+"'";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Kullanıcı başarılı bir şekilde güncellendi");
+                con.Close();
+                populate();
+            }
         }
     }
 }
