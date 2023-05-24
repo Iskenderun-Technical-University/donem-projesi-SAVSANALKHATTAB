@@ -69,26 +69,76 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (ÖğeAdTb.Text == "" || ÖğenoTb.Text == "" || MikCb.Text == "")
+            if (ÖğenoTb.Text == "" || ÖğeAdTb.Text == "" || MikCb.Text == "")
             {
                 MessageBox.Show("Tüm verileri doldur");
             }
             else
             {
                 con.Open();
-                String query = "insert into ÖğeTbl values('"+ ÖğeAdTb.Text +"',"+ ÖğenoTb.Text +",'" + MenCb.SelectedItem.ToString() + "', "+MikCb.Text+")";
+                String query = "insert into ÖğeTbl values('" + ÖğeAdTb.Text + "',"+ ÖğenoTb.Text + ",'"+ MenCb.SelectedItem.ToString() +"', "+MikCb.Text+")";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Öğe başarılı bir şekilde eklendi");
                 con.Close();
                 populate();
             }
-
+            
         }
 
         private void Öğeler_Load(object sender, EventArgs e)
         {
             populate();
+        }
+
+        private void ÖğeGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            ÖğeAdTb.Text = ÖğeGV.SelectedRows[0].Cells[0].Value.ToString();
+            ÖğenoTb.Text = ÖğeGV.SelectedRows[0].Cells[1].Value.ToString();
+            MenCb.SelectedItem = ÖğeGV.SelectedRows[0].Cells[2].Value.ToString();
+            MikCb.Text = ÖğeGV.SelectedRows[0].Cells[3].Value.ToString();
+
+
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+            if (ÖğeAdTb.Text == "")
+            {
+                MessageBox.Show("Silinecek öğe seçiniz");
+            }
+            else
+            {
+                con.Open();
+                string query = "Delete from ÖğeTbl where Öğeno = '" + ÖğenoTb.Text + "'";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("öğe başarılı bir şekilde silindi");
+                con.Close();
+                populate();
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+            if (ÖğenoTb.Text == "" || ÖğeAdTb.Text == "" || MikCb.Text == "")
+            {
+                MessageBox.Show("Tüm boşlukları doldurunuz");
+            }
+            else
+            {
+                con.Open();
+                string query = "update ÖğeTbl set ÖğeAd = '" + ÖğeAdTb.Text + "' , ÖğeTür = '" + MenCb.SelectedItem.ToString() + "' where ÖğeMik = " + MikCb.Text + "";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Öğe başarılı bir şekilde güncellendi");
+                con.Close();
+                populate();
+            }
         }
     }
 }

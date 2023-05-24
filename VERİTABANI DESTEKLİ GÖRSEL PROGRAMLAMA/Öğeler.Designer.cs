@@ -42,8 +42,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.MikCb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.button1 = new System.Windows.Forms.Button();
-            this.ÖğenoTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ÖğeAdTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.ÖğenoTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ÖğeGV = new System.Windows.Forms.DataGridView();
             this.MenCb = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,8 +65,8 @@
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.MikCb);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.ÖğenoTb);
             this.panel1.Controls.Add(this.ÖğeAdTb);
+            this.panel1.Controls.Add(this.ÖğenoTb);
             this.panel1.Controls.Add(this.ÖğeGV);
             this.panel1.Controls.Add(this.MenCb);
             this.panel1.Controls.Add(this.label1);
@@ -88,6 +88,7 @@
             this.button10.TabIndex = 23;
             this.button10.Text = "Sil";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -102,6 +103,7 @@
             this.button9.TabIndex = 22;
             this.button9.Text = "Güncelle";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -124,11 +126,11 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button7.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.button7.Location = new System.Drawing.Point(35, 141);
+            this.button7.Location = new System.Drawing.Point(35, 234);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(109, 27);
             this.button7.TabIndex = 20;
-            this.button7.Text = "Öğe no";
+            this.button7.Text = "Öğe Ad";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // button6
@@ -138,11 +140,11 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button6.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.button6.Location = new System.Drawing.Point(35, 234);
+            this.button6.Location = new System.Drawing.Point(33, 176);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(109, 27);
             this.button6.TabIndex = 19;
-            this.button6.Text = "Öğe Ad";
+            this.button6.Text = "Öğe no";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -196,26 +198,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ÖğenoTb
-            // 
-            this.ÖğenoTb.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ÖğenoTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ÖğenoTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ÖğenoTb.ForeColor = System.Drawing.Color.Black;
-            this.ÖğenoTb.HintForeColor = System.Drawing.Color.Empty;
-            this.ÖğenoTb.HintText = "";
-            this.ÖğenoTb.isPassword = false;
-            this.ÖğenoTb.LineFocusedColor = System.Drawing.Color.Orange;
-            this.ÖğenoTb.LineIdleColor = System.Drawing.Color.Brown;
-            this.ÖğenoTb.LineMouseHoverColor = System.Drawing.Color.Orange;
-            this.ÖğenoTb.LineThickness = 4;
-            this.ÖğenoTb.Location = new System.Drawing.Point(150, 141);
-            this.ÖğenoTb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.ÖğenoTb.Name = "ÖğenoTb";
-            this.ÖğenoTb.Size = new System.Drawing.Size(135, 31);
-            this.ÖğenoTb.TabIndex = 11;
-            this.ÖğenoTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // ÖğeAdTb
             // 
             this.ÖğeAdTb.BackColor = System.Drawing.Color.PapayaWhip;
@@ -233,8 +215,28 @@
             this.ÖğeAdTb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ÖğeAdTb.Name = "ÖğeAdTb";
             this.ÖğeAdTb.Size = new System.Drawing.Size(135, 31);
-            this.ÖğeAdTb.TabIndex = 10;
+            this.ÖğeAdTb.TabIndex = 11;
             this.ÖğeAdTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // ÖğenoTb
+            // 
+            this.ÖğenoTb.BackColor = System.Drawing.Color.PapayaWhip;
+            this.ÖğenoTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ÖğenoTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ÖğenoTb.ForeColor = System.Drawing.Color.Black;
+            this.ÖğenoTb.HintForeColor = System.Drawing.Color.Empty;
+            this.ÖğenoTb.HintText = "";
+            this.ÖğenoTb.isPassword = false;
+            this.ÖğenoTb.LineFocusedColor = System.Drawing.Color.Orange;
+            this.ÖğenoTb.LineIdleColor = System.Drawing.Color.Brown;
+            this.ÖğenoTb.LineMouseHoverColor = System.Drawing.Color.Orange;
+            this.ÖğenoTb.LineThickness = 4;
+            this.ÖğenoTb.Location = new System.Drawing.Point(150, 172);
+            this.ÖğenoTb.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ÖğenoTb.Name = "ÖğenoTb";
+            this.ÖğenoTb.Size = new System.Drawing.Size(135, 31);
+            this.ÖğenoTb.TabIndex = 10;
+            this.ÖğenoTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // ÖğeGV
             // 
@@ -265,7 +267,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ÖğeGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.ÖğeGV.GridColor = System.Drawing.Color.Linen;
-            this.ÖğeGV.Location = new System.Drawing.Point(469, 141);
+            this.ÖğeGV.Location = new System.Drawing.Point(480, 137);
             this.ÖğeGV.Name = "ÖğeGV";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.PapayaWhip;
@@ -291,8 +293,10 @@
             this.ÖğeGV.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.PapayaWhip;
             this.ÖğeGV.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ÖğeGV.RowTemplate.Height = 30;
-            this.ÖğeGV.Size = new System.Drawing.Size(450, 441);
+            this.ÖğeGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ÖğeGV.Size = new System.Drawing.Size(444, 441);
             this.ÖğeGV.TabIndex = 4;
+            this.ÖğeGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ÖğeGV_CellContentClick);
             // 
             // MenCb
             // 
@@ -395,8 +399,8 @@
         private System.Windows.Forms.Button button5;
         private Bunifu.Framework.UI.BunifuMaterialTextbox MikCb;
         private System.Windows.Forms.Button button1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox ÖğenoTb;
         private Bunifu.Framework.UI.BunifuMaterialTextbox ÖğeAdTb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox ÖğenoTb;
         private System.Windows.Forms.DataGridView ÖğeGV;
         private System.Windows.Forms.ComboBox MenCb;
         private System.Windows.Forms.Label label1;

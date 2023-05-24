@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,18 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         public SiparişForm()
         {
             InitializeComponent();
+        }
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\pc\OneDrive\المستندات\KafeShopdb.mdf;Integrated Security=True;Connect Timeout=30");
+        void populate()
+        {
+            con.Open();
+            String query = " select * from ÖğeTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ÖğeGV.DataSource = ds.Tables[0];
+            con.Close();
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -59,6 +72,11 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             kullanıcı.Show();
             
 
+        }
+
+        private void SiparişForm_Load(object sender, EventArgs e)
+        {
+            populate();
         }
     }
 }
