@@ -30,6 +30,17 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             ÖğeGV.DataSource = ds.Tables[0];
             con.Close();
         }
+        void filterbymenü()
+        {
+            con.Open();
+            String query = " select * from ÖğeTbl where ÖğeTür = '"+ Menücb.SelectedItem.ToString() +"' ";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ÖğeGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
 
         private void label7_Click(object sender, EventArgs e)
         {
@@ -103,6 +114,17 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         DataTable table = new DataTable();
         int flag = 0;
         int sum = 0;
+
+        private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            filterbymenü();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            populate();
+        }
+
         private void SiparişForm_Load(object sender, EventArgs e)
         {
             populate();
