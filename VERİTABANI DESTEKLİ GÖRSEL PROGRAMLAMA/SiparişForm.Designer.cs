@@ -39,7 +39,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.SiparişGV = new System.Windows.Forms.DataGridView();
-            this.button10 = new System.Windows.Forms.Button();
+            this.LabelAmnt = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -56,11 +56,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Öğe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Menü = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Miktar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Toplam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SiparişGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ÖğeGV)).BeginInit();
@@ -71,7 +66,7 @@
             this.panel1.BackColor = System.Drawing.Color.PapayaWhip;
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.SiparişGV);
-            this.panel1.Controls.Add(this.button10);
+            this.panel1.Controls.Add(this.LabelAmnt);
             this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
@@ -110,21 +105,15 @@
             this.SiparişGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.BurlyWood;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Farsi Simple Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Farsi Simple Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Brown;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Sienna;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.PapayaWhip;
             this.SiparişGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.SiparişGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.SiparişGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.No,
-            this.Öğe,
-            this.Menü,
-            this.Miktar,
-            this.Toplam});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.BurlyWood;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Farsi Simple Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Farsi Simple Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Brown;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Sienna;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.PapayaWhip;
@@ -138,7 +127,7 @@
             this.SiparişGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.BurlyWood;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Farsi Simple Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Farsi Simple Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Brown;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Sienna;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.PapayaWhip;
@@ -146,19 +135,19 @@
             this.SiparişGV.Size = new System.Drawing.Size(543, 242);
             this.SiparişGV.TabIndex = 24;
             // 
-            // button10
+            // LabelAmnt
             // 
-            this.button10.BackColor = System.Drawing.Color.Brown;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button10.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.button10.Location = new System.Drawing.Point(785, 612);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(134, 27);
-            this.button10.TabIndex = 23;
-            this.button10.Text = "Sipariş Miktarı";
-            this.button10.UseVisualStyleBackColor = false;
+            this.LabelAmnt.BackColor = System.Drawing.Color.Brown;
+            this.LabelAmnt.FlatAppearance.BorderSize = 0;
+            this.LabelAmnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LabelAmnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LabelAmnt.ForeColor = System.Drawing.Color.PapayaWhip;
+            this.LabelAmnt.Location = new System.Drawing.Point(767, 612);
+            this.LabelAmnt.Name = "LabelAmnt";
+            this.LabelAmnt.Size = new System.Drawing.Size(134, 27);
+            this.LabelAmnt.TabIndex = 23;
+            this.LabelAmnt.Text = "Sipariş Miktarı";
+            this.LabelAmnt.UseVisualStyleBackColor = false;
             // 
             // button9
             // 
@@ -265,6 +254,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Sepete Ekle";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // siparişNo
             // 
@@ -357,6 +347,7 @@
             this.ÖğeGV.Size = new System.Drawing.Size(452, 224);
             this.ÖğeGV.TabIndex = 4;
             this.ÖğeGV.UseWaitCursor = true;
+            this.ÖğeGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ÖğeGV_CellContentClick);
             // 
             // comboBox1
             // 
@@ -438,31 +429,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // No
-            // 
-            this.No.HeaderText = "Numara";
-            this.No.Name = "No";
-            // 
-            // Öğe
-            // 
-            this.Öğe.HeaderText = "ÖğeAd";
-            this.Öğe.Name = "Öğe";
-            // 
-            // Menü
-            // 
-            this.Menü.HeaderText = "Menü";
-            this.Menü.Name = "Menü";
-            // 
-            // Miktar
-            // 
-            this.Miktar.HeaderText = "Miktar";
-            this.Miktar.Name = "Miktar";
-            // 
-            // Toplam
-            // 
-            this.Toplam.HeaderText = "Toplam";
-            this.Toplam.Name = "Toplam";
-            // 
             // SiparişForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,17 +469,12 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button LabelAmnt;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView SiparişGV;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn No;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Öğe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Menü;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Miktar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Toplam;
     }
 }

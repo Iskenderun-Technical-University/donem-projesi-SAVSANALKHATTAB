@@ -197,9 +197,9 @@
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.PapayaWhip;
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.PapayaWhip;
             this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Giriş Yap";

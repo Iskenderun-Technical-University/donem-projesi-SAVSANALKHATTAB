@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Logging;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -73,10 +74,54 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             
 
         }
+        int num = 0;
+        int miktar, toplam;
+       string öğe, menü;
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if( miktarTb.Text == "")
+            {
+                MessageBox.Show("Öğe miktarı ne kadardır??");
+            }
+            else if( flag == 0)
+            {
+                MessageBox.Show("Sipariş edilecek ürün seçiniz..");
+            }
+            else
+            {
+                num = num + 1;
+                toplam = miktar * Convert.ToInt32(miktarTb.Text);
+                table.Rows.Add(num, öğe, menü, miktar, toplam);
+                SiparişGV.DataSource = table;
+                flag = 0;
+            }
+            sum = sum + toplam;
+            LabelAmnt.Text = "TR " + sum;
+        }
+
+        DataTable table = new DataTable();
+        int flag = 0;
+        int sum = 0;
         private void SiparişForm_Load(object sender, EventArgs e)
         {
             populate();
+            table.Columns.Add("No", typeof(int));
+            table.Columns.Add("Öğe", typeof(string));
+            table.Columns.Add("Menü", typeof(string));
+            table.Columns.Add("Miktar", typeof(int));
+            table.Columns.Add("Toplam", typeof(int));
+            SiparişGV.DataSource = table;
         }
+
+        private void ÖğeGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            öğe = ÖğeGV.SelectedRows[0].Cells[0].Value.ToString();
+            menü = ÖğeGV.SelectedRows[0].Cells[2].Value.ToString();
+            miktar = Convert.ToInt32( ÖğeGV.SelectedRows[0].Cells[3].Value.ToString());
+            flag = 1;
+        }
+
+        
     }
 }
