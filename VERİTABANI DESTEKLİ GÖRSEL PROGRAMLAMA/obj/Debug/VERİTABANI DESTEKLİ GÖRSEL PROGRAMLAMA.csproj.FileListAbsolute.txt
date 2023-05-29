@@ -68,3 +68,4 @@ C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\V
 C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.exe
 C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA.pdb
 C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA.Öğeler.resources
+C:\Users\pc\OneDrive\Desktop\veritabanı projesi\donem-projesi-SAVSANALKHATTAB\VERİTABANI DESTEKLİ GÖRSEL PROGRAMLAMA\obj\Debug\VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA.GuestSiparişForm.resources

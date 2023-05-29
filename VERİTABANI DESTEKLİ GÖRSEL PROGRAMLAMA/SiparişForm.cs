@@ -134,6 +134,7 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             table.Columns.Add("Miktar", typeof(int));
             table.Columns.Add("Toplam", typeof(int));
             SiparişGV.DataSource = table;
+            Datelbl.Text = DateTime.Today.Date.ToString();
         }
 
         private void ÖğeGV_CellContentClick(object sender, DataGridViewCellEventArgs e)

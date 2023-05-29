@@ -71,6 +71,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuestSiparişForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestSiparişForm.Designer.cs">
+      <DependentUpon>GuestSiparişForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="KullanıcılarForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestSiparişForm.resx">
+      <DependentUpon>GuestSiparişForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KullanıcılarForm.resx">
       <DependentUpon>KullanıcılarForm.cs</DependentUpon>
