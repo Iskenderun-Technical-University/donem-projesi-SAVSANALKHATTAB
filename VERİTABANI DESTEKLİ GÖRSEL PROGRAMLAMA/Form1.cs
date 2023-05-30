@@ -49,13 +49,14 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
         {
 
         }
-
+        public static string user;
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-           /* SiparişForm uorder = new SiparişForm();
-            uorder.Show();
-            this.Hide(); 
-           */
+            /* SiparişForm uorder = new SiparişForm();
+             uorder.Show();
+             this.Hide(); 
+            */
+            user = UnameTb.Text;
            if ( UnameTb.Text == "" || PasswordTb.Text == "")
             {
                 MessageBox.Show("Kullanıcı adı veya şifreyi giriniz");

@@ -108,7 +108,7 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
                 flag = 0;
             }
             sum = sum + toplam;
-            LabelAmnt.Text = "TR " + sum;
+            OrderAmt.Text = "" + sum;
         }
 
         DataTable table = new DataTable();
@@ -125,6 +125,16 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             populate();
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            String query = "insert into SiparişTbl values(" + siparişNo.Text + ", '" + Datelbl.Text + "', '" + satıcıAd.Text + "', " + OrderAmt.Text + " )";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Sipariş başarılı bir şekilde eklendi");
+            con.Close();
+        }
+
         private void SiparişForm_Load(object sender, EventArgs e)
         {
             populate();
@@ -134,7 +144,8 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             table.Columns.Add("Miktar", typeof(int));
             table.Columns.Add("Toplam", typeof(int));
             SiparişGV.DataSource = table;
-            Datelbl.Text = DateTime.Today.Date.ToString();
+            Datelbl.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
+            satıcıAd.Text = Form1.user;
         }
 
         private void ÖğeGV_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -37,10 +37,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Datelbl = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SiparişGV = new System.Windows.Forms.DataGridView();
-            this.LabelAmnt = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -57,7 +57,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.Datelbl = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.OrderAmt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SiparişGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ÖğeGV)).BeginInit();
@@ -66,11 +67,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel1.Controls.Add(this.button11);
+            this.panel1.Controls.Add(this.OrderAmt);
             this.panel1.Controls.Add(this.Datelbl);
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.SiparişGV);
-            this.panel1.Controls.Add(this.LabelAmnt);
             this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
@@ -87,6 +89,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(946, 655);
             this.panel1.TabIndex = 0;
+            // 
+            // Datelbl
+            // 
+            this.Datelbl.AutoSize = true;
+            this.Datelbl.Font = new System.Drawing.Font("Farsi Simple Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Datelbl.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.Datelbl.Location = new System.Drawing.Point(885, 24);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.Size = new System.Drawing.Size(61, 35);
+            this.Datelbl.TabIndex = 28;
+            this.Datelbl.Text = "Date";
             // 
             // button10
             // 
@@ -154,20 +167,6 @@
             this.SiparişGV.Size = new System.Drawing.Size(543, 242);
             this.SiparişGV.TabIndex = 24;
             // 
-            // LabelAmnt
-            // 
-            this.LabelAmnt.BackColor = System.Drawing.Color.Brown;
-            this.LabelAmnt.FlatAppearance.BorderSize = 0;
-            this.LabelAmnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LabelAmnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LabelAmnt.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.LabelAmnt.Location = new System.Drawing.Point(767, 612);
-            this.LabelAmnt.Name = "LabelAmnt";
-            this.LabelAmnt.Size = new System.Drawing.Size(134, 27);
-            this.LabelAmnt.TabIndex = 23;
-            this.LabelAmnt.Text = "Sipariş Miktarı";
-            this.LabelAmnt.UseVisualStyleBackColor = false;
-            // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Brown;
@@ -181,6 +180,7 @@
             this.button9.TabIndex = 22;
             this.button9.Text = "Sipariş Tamamla";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -451,16 +451,33 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Datelbl
+            // button11
             // 
-            this.Datelbl.AutoSize = true;
-            this.Datelbl.Font = new System.Drawing.Font("Farsi Simple Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Datelbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.Datelbl.Location = new System.Drawing.Point(885, 24);
-            this.Datelbl.Name = "Datelbl";
-            this.Datelbl.Size = new System.Drawing.Size(61, 35);
-            this.Datelbl.TabIndex = 28;
-            this.Datelbl.Text = "Date";
+            this.button11.BackColor = System.Drawing.Color.Brown;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button11.ForeColor = System.Drawing.Color.PapayaWhip;
+            this.button11.Location = new System.Drawing.Point(720, 612);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(41, 27);
+            this.button11.TabIndex = 30;
+            this.button11.Text = "TR";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // OrderAmt
+            // 
+            this.OrderAmt.BackColor = System.Drawing.Color.Brown;
+            this.OrderAmt.FlatAppearance.BorderSize = 0;
+            this.OrderAmt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OrderAmt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.OrderAmt.ForeColor = System.Drawing.Color.PapayaWhip;
+            this.OrderAmt.Location = new System.Drawing.Point(767, 612);
+            this.OrderAmt.Name = "OrderAmt";
+            this.OrderAmt.Size = new System.Drawing.Size(134, 27);
+            this.OrderAmt.TabIndex = 29;
+            this.OrderAmt.Text = "Sipariş Miktarı";
+            this.OrderAmt.UseVisualStyleBackColor = false;
             // 
             // SiparişForm
             // 
@@ -502,7 +519,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button LabelAmnt;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button2;
@@ -511,5 +527,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label Datelbl;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button OrderAmt;
     }
 }

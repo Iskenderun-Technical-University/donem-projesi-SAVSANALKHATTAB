@@ -56,7 +56,7 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             table.Columns.Add("Miktar", typeof(int));
             table.Columns.Add("Toplam", typeof(int));
             SiparişGV.DataSource = table;
-            Datelbl.Text = DateTime.Today.Date.ToString();
+            Datelbl.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
         }
         int num = 0;
         int miktar, toplam;
@@ -80,6 +80,22 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
 
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            String query = "insert into SiparişTbl values(" + siparişNoTb.Text + ", '" + Datelbl.Text + "', '" + satıcıAdTb.Text + "', "+ OrderAmt.Text +" )";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Sipariş başarılı bir şekilde eklendi");
+            con.Close();
+            
+        }
+
+        private void OrderAmt_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (miktarTb.Text == "")
@@ -99,7 +115,7 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
                 flag = 0;
             }
             sum = sum + toplam;
-            LabelAmnt.Text = "TR " + sum;
+            OrderAmt.Text = "" + sum;
         }
 
         private void Menücb_SelectedIndexChanged(object sender, EventArgs e)
