@@ -95,6 +95,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SiparişGörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparişGörüntüle.Designer.cs">
+      <DependentUpon>SiparişGörüntüle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Öğeler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparişGörüntüle.resx">
+      <DependentUpon>SiparişGörüntüle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Öğeler.resx">
       <DependentUpon>Öğeler.cs</DependentUpon>

@@ -135,6 +135,12 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             con.Close();
         }
 
+        private void button12_Click(object sender, EventArgs e)
+        {
+            SiparişGörüntüle view = new SiparişGörüntüle();
+            view.Show();
+        }
+
         private void SiparişForm_Load(object sender, EventArgs e)
         {
             populate();
