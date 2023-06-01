@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,7 +49,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Tan;
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(360, 0);
@@ -70,23 +68,12 @@
             this.label7.Text = "X";
             this.label7.Click += new System.EventHandler(this.label7_Click_1);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Farsi Simple Outline", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(63, 261);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(251, 47);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Kod Alanına Göre";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Farsi Simple Outline", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(44, 208);
+            this.label5.Location = new System.Drawing.Point(53, 225);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(294, 47);
             this.label5.TabIndex = 2;
@@ -181,7 +168,7 @@
             this.PasswordTb.ForeColor = System.Drawing.Color.Black;
             this.PasswordTb.HintForeColor = System.Drawing.Color.Empty;
             this.PasswordTb.HintText = "";
-            this.PasswordTb.isPassword = false;
+            this.PasswordTb.isPassword = true;
             this.PasswordTb.LineFocusedColor = System.Drawing.Color.Orange;
             this.PasswordTb.LineIdleColor = System.Drawing.Color.Olive;
             this.PasswordTb.LineMouseHoverColor = System.Drawing.Color.Orange;
@@ -254,7 +241,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;

@@ -129,5 +129,10 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
                 populate();
             }
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

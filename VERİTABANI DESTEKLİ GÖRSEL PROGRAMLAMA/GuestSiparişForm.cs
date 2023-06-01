@@ -44,7 +44,7 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
 
         private void label7_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void GuestSiparişForm_Load(object sender, EventArgs e)

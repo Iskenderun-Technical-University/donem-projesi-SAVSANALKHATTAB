@@ -37,6 +37,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.OrderAmt = new System.Windows.Forms.Button();
             this.Datelbl = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SiparişGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ÖğeGV)).BeginInit();
@@ -91,6 +91,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(946, 655);
             this.panel1.TabIndex = 0;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Brown;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button12.ForeColor = System.Drawing.Color.PapayaWhip;
+            this.button12.Location = new System.Drawing.Point(746, 612);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(155, 27);
+            this.button12.TabIndex = 31;
+            this.button12.Text = "Sipariş Görüntüle";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -182,7 +197,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.SiparişGV.DefaultCellStyle = dataGridViewCellStyle2;
             this.SiparişGV.GridColor = System.Drawing.SystemColors.Control;
-            this.SiparişGV.Location = new System.Drawing.Point(358, 364);
+            this.SiparişGV.Location = new System.Drawing.Point(375, 364);
             this.SiparişGV.MinimumSize = new System.Drawing.Size(20, 25);
             this.SiparişGV.Name = "SiparişGV";
             this.SiparişGV.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -194,7 +209,7 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Sienna;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.PapayaWhip;
             this.SiparişGV.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.SiparişGV.Size = new System.Drawing.Size(543, 242);
+            this.SiparişGV.Size = new System.Drawing.Size(550, 229);
             this.SiparişGV.TabIndex = 24;
             // 
             // button9
@@ -219,7 +234,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button8.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.button8.Location = new System.Drawing.Point(649, 68);
+            this.button8.Location = new System.Drawing.Point(649, 65);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(141, 27);
             this.button8.TabIndex = 21;
@@ -358,8 +373,9 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Sienna;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.PapayaWhip;
             this.ÖğeGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.ÖğeGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.ÖğeGV.BackgroundColor = System.Drawing.Color.PapayaWhip;
+            this.ÖğeGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ÖğeGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.BurlyWood;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Farsi Simple Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -376,9 +392,11 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.PapayaWhip;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ÖğeGV.DefaultCellStyle = dataGridViewCellStyle6;
-            this.ÖğeGV.Location = new System.Drawing.Point(449, 101);
-            this.ÖğeGV.MinimumSize = new System.Drawing.Size(20, 26);
+            this.ÖğeGV.GridColor = System.Drawing.SystemColors.Control;
+            this.ÖğeGV.Location = new System.Drawing.Point(428, 98);
+            this.ÖğeGV.MinimumSize = new System.Drawing.Size(20, 25);
             this.ÖğeGV.Name = "ÖğeGV";
+            this.ÖğeGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.BurlyWood;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Farsi Simple Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -386,7 +404,6 @@
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Sienna;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.PapayaWhip;
             this.ÖğeGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.ÖğeGV.RowHeadersWidth = 50;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.BurlyWood;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Farsi Simple Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -395,9 +412,8 @@
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.PapayaWhip;
             this.ÖğeGV.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.ÖğeGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ÖğeGV.Size = new System.Drawing.Size(452, 224);
-            this.ÖğeGV.TabIndex = 4;
-            this.ÖğeGV.UseWaitCursor = true;
+            this.ÖğeGV.Size = new System.Drawing.Size(497, 227);
+            this.ÖğeGV.TabIndex = 24;
             this.ÖğeGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ÖğeGV_CellContentClick);
             // 
             // Menücb
@@ -480,21 +496,6 @@
             this.button4.Text = "Kullanıcılar";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.Brown;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button12.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.button12.Location = new System.Drawing.Point(746, 612);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(155, 27);
-            this.button12.TabIndex = 31;
-            this.button12.Text = "Sipariş Görüntüle";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // SiparişForm
             // 
