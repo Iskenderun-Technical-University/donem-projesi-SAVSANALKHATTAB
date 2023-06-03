@@ -141,6 +141,11 @@ namespace VERİTABANI_DESTEKLİ_GÖRSEL_PROGRAMLAMA
             view.Show();
         }
 
+        private void SiparişGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void SiparişForm_Load(object sender, EventArgs e)
         {
             populate();

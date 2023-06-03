@@ -65,6 +65,7 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Sienna;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.PapayaWhip;
             this.SiparişGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.SiparişGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.SiparişGV.BackgroundColor = System.Drawing.Color.PapayaWhip;
             this.SiparişGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.SiparişGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -86,7 +87,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.SiparişGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.SiparişGV.GridColor = System.Drawing.SystemColors.Control;
-            this.SiparişGV.Location = new System.Drawing.Point(126, 147);
+            this.SiparişGV.Location = new System.Drawing.Point(59, 119);
             this.SiparişGV.MinimumSize = new System.Drawing.Size(20, 25);
             this.SiparişGV.Name = "SiparişGV";
             this.SiparişGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -97,6 +98,7 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Sienna;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.PapayaWhip;
             this.SiparişGV.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.SiparişGV.RowHeadersWidth = 50;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.BurlyWood;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Farsi Simple Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -105,8 +107,8 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.PapayaWhip;
             this.SiparişGV.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.SiparişGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SiparişGV.Size = new System.Drawing.Size(447, 431);
-            this.SiparişGV.TabIndex = 24;
+            this.SiparişGV.Size = new System.Drawing.Size(538, 488);
+            this.SiparişGV.TabIndex = 40;
             this.SiparişGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SiparişGV_CellContentClick);
             // 
             // button1
